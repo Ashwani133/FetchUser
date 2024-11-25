@@ -1,5 +1,5 @@
 export default function Detail(){
-    return <div className="sm:p-5 sm:px-5 mx-20">
+    return <div className="sm:p-5 sm:px-5 sm:mx-20 mx-3">
     <div className=" font-family:Poppins font-extrabold text-2xl tracking-tight text-primary mb-3">
         Detail Page
     </div>

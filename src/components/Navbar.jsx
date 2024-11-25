@@ -8,7 +8,7 @@ export function Navbar(){
     function handleClick(){
         setShowNavbar(curr => !curr)
     }
-    return <div className="p-2 px-24 sticky top-0 z-50 bg-gray-50">
+    return <div className="sm:p-2 sm:px-24 sticky top-0 z-50 bg-gray-50">
         <nav className="flex justify-between items-center">
             <div className="hidden lg:flex items-center">
             <div className="font-family:Poppins font-extrabold text-3xl tracking-tight text-primary hover:bg-gray-200"><Link to='/'>FETCHUSER</Link></div>

@@ -27,8 +27,8 @@ export const RandomUser = ()=>{
         setPage(curr => curr+1)
     }
     return <div className="flex flex-col items-center justify-center p-20">
-        <div className="grid lg:grid-cols-3 md:grid-cols-2  gap-20 ">{loading===false? user.map(u => <Card className image={u.picture.large} fName = {u.name.first} lName={u.name.last} loading={loading}/>
-        ): Array(6).fill().map(u => <Card loading={loading} />)}</div>
+        <div className="grid lg:grid-cols-3 md:grid-cols-2  gap-20 ">{loading===false? user.map((u,index) => <Card key={index} image={u.picture.large} fName = {u.name.first} lName={u.name.last} loading={loading}/>
+        ): Array(6).fill().map((u,index) => <Card key={index} loading={loading} />)}</div>
         <LoadButton handleClick={handleChangePage}/>
     </div>
 }
